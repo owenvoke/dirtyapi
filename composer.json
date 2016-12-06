@@ -1,0 +1,31 @@
+{
+  "name": "pxgamer/dirtyapi",
+  "type": "library",
+  "description": "A PHP class for utilising the DirtyMarkup API.",
+  "homepage": "https://github.com/PXgamer/dirtyapi",
+  "authors": [
+    {
+      "name": "PXgamer",
+      "email": "owzie123@gmail.com",
+      "role": "Developer"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/PXgamer/dirtyapi/issues"
+  },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/PXgamer/dirtyapi"
+    }
+  ],
+  "require": {
+    "php": ">=5.5.0",
+    "ext-curl": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "pxgamer\\dirtyAPI\\": "src/"
+    }
+  }
+}

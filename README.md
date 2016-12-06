@@ -10,7 +10,6 @@ A PHP class for utilising the DirtyMarkup API.
 __Include the class:__
 ```php
 <?php
-include('dirtyapi.php');
 $dirtyAPI = new \pxgamer\dirtyAPI();
 ```
 __Beautifying html__  
