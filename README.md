@@ -8,10 +8,20 @@ A PHP class for utilising the DirtyMarkup API.
 ## Usage
 
 __Include the class:__
+- Using Composer  
+`composer require pxgamer/dirtyapi`  
 ```php
 <?php
+require 'vendor/autoload.php';
 $dirtyAPI = new \pxgamer\dirtyAPI();
 ```
+- Including the file manually  
+```php
+<?php
+include 'src/dirtyAPI.php';
+$dirtyAPI = new \pxgamer\dirtyAPI();
+```
+
 __Beautifying html__  
 `$dirtyAPI::html($code, $indentation);`  
 __Beautifying css__  
@@ -30,4 +40,7 @@ Variable Name | Variable Type | Variable Description      | Required?
 
 DirtyMarkup has a soft rate limit of 1,000 requests per day per IP address. If you consistently exceed the limit, your IP address will be blacklisted to preserve resources for other users.
 
-Again, DirtyMarkup is a free service. If you're application will require significant usage of the API, please contact [@claviska](https://twitter.com/claviska) about sponsoring the service before launching.
+Again, DirtyMarkup is a free service. If you're application will require significant usage of the API, please contact [@claviska][@claviska] about sponsoring the service before launching.
+
+[@claviska]: https://twitter.com/claviska
+[comp]: https://getcomposer.org
