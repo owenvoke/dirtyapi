@@ -25,7 +25,7 @@
   },
   "autoload": {
     "psr-4": {
-      "pxgamer\\dirtyAPI\\": "src/"
+      "pxgamer\\": "src/"
     }
   }
 }
