@@ -3,6 +3,7 @@
   "type": "library",
   "description": "A PHP class for utilising the DirtyMarkup API.",
   "homepage": "https://github.com/PXgamer/dirtyapi",
+  "license": "MIT",
   "authors": [
     {
       "name": "PXgamer",
