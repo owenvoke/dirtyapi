@@ -9,3 +9,5 @@ php:
   - hhvm
   - nightly
 script: phpunit
+addons:
+    srcclr: true
