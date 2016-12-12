@@ -34,7 +34,7 @@ __Beautifying javascript__
 Variable Name | Variable Type | Variable Description      | Required?
 ------------- | ------------- | ------------------------- | ---------
 `$code`       | String        | The code to be formatted. | true
-`$indent`     | Integer       | The indentation used.     | true
+`$indent`     | Integer       | The indentation used.     | false
 
 ## Notes
 
