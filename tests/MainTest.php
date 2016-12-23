@@ -1,31 +1,35 @@
 <?php
-use pxgamer\dirtyAPI;
+use pxgamer\dirtyApi\Beautifier;
 
 class MainTest extends PHPUnit_Framework_TestCase
 {
-
     public function testCanBeInitialised()
     {
-        $dirtyAPI = new dirtyAPI();
-        $this->assertInstanceOf(dirtyAPI::class, $dirtyAPI);
+        $beautifier = new Beautifier;
+        $this->assertInstanceOf(Beautifier::class, $beautifier);
     }
 
     public function testCanFixHTML()
     {
-        $response = dirtyAPI::html('<a href="https://github.com/">GitHub</a>');
-        $this->assertObjectHasAttribute('clean', $response);
+        $beautifier = new Beautifier;
+        $response = $beautifier->html('<a href="https://github.com/">GitHub</a>');
+        $response_object = json_decode($response);
+        $this->assertObjectHasAttribute('clean', $response_object);
     }
 
     public function testCanFixCSS()
     {
-        $response = dirtyAPI::css('.test{ color: red } ');
-        $this->assertObjectHasAttribute('clean', $response);
+        $beautifier = new Beautifier;
+        $response = $beautifier->css('.test{ color: red } ');
+        $response_object = json_decode($response);
+        $this->assertObjectHasAttribute('clean', $response_object);
     }
 
     public function testCanFixJavascript()
     {
-        $response = dirtyAPI::js('function test() { var a= 0; console.log(a);}');
-        $this->assertObjectHasAttribute('clean', $response);
+        $beautifier = new Beautifier;
+        $response = $beautifier->js('function test() { var a= 0; console.log(a);}');
+        $response_object = json_decode($response);
+        $this->assertObjectHasAttribute('clean', $response_object);
     }
-
 }

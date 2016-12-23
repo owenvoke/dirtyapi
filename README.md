@@ -8,33 +8,36 @@ A PHP class for utilising the DirtyMarkup API.
 ## Usage
 
 __Include the class:__
-- Using Composer  
-`composer require pxgamer/dirtyapi`  
+- Using Composer
+
+`composer require pxgamer/dirtyapi`
 ```php
 <?php
 require 'vendor/autoload.php';
-$dirtyAPI = new \pxgamer\dirtyAPI();
 ```
-- Including the file manually  
+
+- Including the file manually
 ```php
 <?php
-include 'src/dirtyAPI.php';
-$dirtyAPI = new \pxgamer\dirtyAPI();
+include 'src/Beautifier.php';
 ```
 
-__Beautifying html__  
-`$dirtyAPI::html($code, $indentation);`  
-__Beautifying css__  
-`$dirtyAPI::css($code, $indentation);`  
-__Beautifying javascript__  
-`$dirtyAPI::js($code, $indentation);`  
+Once included, you can initialise the class using either of the following:
+```php
+$beautifier = new \pxgamer\dirtyApi\Beautifier;
+```
+```php
+use \pxgamer\dirtyApi\Beautifier;
+$beautifier = new Beautifier;
+```
 
-## Variables
+## Class Methods
 
-Variable Name | Variable Type | Variable Description      | Required?
-------------- | ------------- | ------------------------- | ---------
-`$code`       | String        | The code to be formatted. | true
-`$indent`     | Integer       | The indentation used.     | false
+Method Name  | Parameters  | Returns
+------------ | ----------- | -------
+html()       | string, int | `string (json)`
+css()        | string, int | `string (json)`
+js()         | string, int | `string (json)`
 
 ## Notes
 
