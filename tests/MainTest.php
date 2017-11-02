@@ -1,7 +1,9 @@
 <?php
+
+use PHPUnit\Framework\TestCase;
 use pxgamer\dirtyApi\Beautifier;
 
-class MainTest extends PHPUnit_Framework_TestCase
+class MainTest extends TestCase
 {
     public function testCanBeInitialised()
     {
