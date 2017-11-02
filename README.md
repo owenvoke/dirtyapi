@@ -7,18 +7,17 @@ A PHP class for utilising the DirtyMarkup API.
 
 ## Usage
 
-__Include the class:__
-- Using Composer
+#### Using Composer
 
 `composer require pxgamer/dirtyapi`
+
 ```php
-<?php
 require 'vendor/autoload.php';
 ```
 
-- Including the file manually
+#### Including the file manually
+
 ```php
-<?php
 include 'src/Beautifier.php';
 ```
 
