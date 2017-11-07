@@ -1,10 +1,9 @@
 <?php
 
-namespace pxgamer\dirtyApi;
+namespace pxgamer\DirtyApi;
 
 /**
  * Class Beautifier
- * @package pxgamer\dirtyApi
  */
 class Beautifier
 {
@@ -60,7 +59,7 @@ class Beautifier
         curl_setopt_array(
             $ch,
             [
-                CURLOPT_URL            => self::BASE_URL . $mode,
+                CURLOPT_URL            => self::BASE_URL.$mode,
                 CURLOPT_POST           => 1,
                 CURLOPT_POSTFIELDS     => http_build_query($content),
                 CURLOPT_RETURNTRANSFER => 1,

@@ -1,48 +1,87 @@
 # dirtyapi
 
-A PHP class for utilising the DirtyMarkup API.
+[![Latest Version on Packagist][ico-version]][link-packagist]
+[![Software License][ico-license]](LICENSE.md)
+[![Build Status][ico-travis]][link-travis]
+[![Style CI][ico-styleci]][link-styleci]
+[![Code Coverage][ico-code-quality]][link-code-quality]
+[![Total Downloads][ico-downloads]][link-downloads]
 
+A PHP class for utilising the [DirtyMarkup] API.
 
-[DirtyMarkup](https://dirtymarkup.com/docs) has an API endpoint for cleaning `html`, `css` and `javascript`. This PHP class is an easy way to use the API.
+## Structure
+
+```
+src/
+tests/
+vendor/
+```
+
+## Install
+
+Via Composer
+
+``` bash
+$ composer require pxgamer/dirtyapi
+```
 
 ## Usage
 
-#### Using Composer
-
-`composer require pxgamer/dirtyapi`
-
 ```php
-require 'vendor/autoload.php';
-```
-
-#### Including the file manually
-
-```php
-include 'src/Beautifier.php';
-```
-
-Once included, you can initialise the class using either of the following:
-```php
-$beautifier = new \pxgamer\dirtyApi\Beautifier;
-```
-```php
-use \pxgamer\dirtyApi\Beautifier;
+use \pxgamer\DirtyApi\Beautifier();
 $beautifier = new Beautifier;
 ```
 
-## Class Methods
+#### Methods
 
-Method Name  | Parameters  | Returns
------------- | ----------- | -------
-html()       | string, int | `string (json)`
-css()        | string, int | `string (json)`
-js()         | string, int | `string (json)`
+Method Name            | Parameters  | Returns
+---------------------- | ----------- | -------
+`$beautifier->html()`  | string, int | `string (json)`
+`$beautifier->css()`   | string, int | `string (json)`
+`$beautifier->js()`    | string, int | `string (json)`
 
-## Notes
+## Change log
 
-DirtyMarkup has a soft rate limit of 1,000 requests per day per IP address. If you consistently exceed the limit, your IP address will be blacklisted to preserve resources for other users.
+Please see [CHANGELOG](CHANGELOG.md) for more information on what has changed recently.
 
-Again, DirtyMarkup is a free service. If you're application will require significant usage of the API, please contact [@claviska][@claviska] about sponsoring the service before launching.
+## Testing
+
+``` bash
+$ composer test
+```
+
+## Contributing
+
+Please see [CONTRIBUTING](CONTRIBUTING.md) and [CODE_OF_CONDUCT](CODE_OF_CONDUCT.md) for details.
+
+## Security
+
+If you discover any security related issues, please email owzie123@gmail.com instead of using the issue tracker.
+
+## Credits
+
+- [pxgamer][link-author]
+- [@claviska]
+- [All Contributors][link-contributors]
+
+## License
+
+The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
 
 [@claviska]: https://twitter.com/claviska
-[comp]: https://getcomposer.org
+[DirtyMarkup]: https://dirtymarkup.com
+
+[ico-version]: https://img.shields.io/packagist/v/pxgamer/dirtyapi.svg?style=flat-square
+[ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
+[ico-travis]: https://img.shields.io/travis/pxgamer/dirtyapi/master.svg?style=flat-square
+[ico-styleci]: https://styleci.io/repos/73825365/shield
+[ico-code-quality]: https://img.shields.io/codecov/c/github/pxgamer/dirtyapi.svg?style=flat-square
+[ico-downloads]: https://img.shields.io/packagist/dt/pxgamer/dirtyapi.svg?style=flat-square
+
+[link-packagist]: https://packagist.org/packages/pxgamer/dirtyapi
+[link-travis]: https://travis-ci.org/pxgamer/dirtyapi
+[link-styleci]: https://styleci.io/repos/73825365
+[link-code-quality]: https://codecov.io/gh/pxgamer/dirtyapi
+[link-downloads]: https://packagist.org/packages/pxgamer/dirtyapi
+[link-author]: https://github.com/pxgamer
+[link-contributors]: ../../contributors

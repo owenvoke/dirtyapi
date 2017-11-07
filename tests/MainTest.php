@@ -1,7 +1,8 @@
 <?php
 
+namespace pxgamer\DirtyApi;
+
 use PHPUnit\Framework\TestCase;
-use pxgamer\dirtyApi\Beautifier;
 
 class MainTest extends TestCase
 {
