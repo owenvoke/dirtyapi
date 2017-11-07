@@ -1,10 +1,9 @@
 <?php
 
-namespace pxgamer\dirtyApi;
+namespace pxgamer\DirtyApi;
 
 /**
  * Class Beautifier
- * @package pxgamer\dirtyApi
  */
 class Beautifier
 {
