@@ -7,7 +7,7 @@ namespace pxgamer\DirtyApi;
  */
 class Beautifier
 {
-    const BASE_URL = 'https://dirtymarkup.com/api';
+    const BASE_URL = 'https://www.10bestdesign.com/dirtymarkup/api';
 
     /**
      * @param     $code
