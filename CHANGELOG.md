@@ -4,6 +4,11 @@ All notable changes to `dirtyapi` will be documented in this file.
 
 Updates should follow the [Keep a CHANGELOG](http://keepachangelog.com/) principles.
 
+## v2.0.1 - 2017-11-08
+
+### Added
+- Updated the endpoint URL for DirtyMarkup's API as per the documentation ([#1](https://github.com/pxgamer/dirtyapi/pull/1))
+
 ## v2.0.0 - 2017-11-07
 
 ### Added
