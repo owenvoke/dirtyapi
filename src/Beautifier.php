@@ -19,8 +19,8 @@ class Beautifier
         return $this->post(
             '/html',
             [
-            'code'   => $code,
-            'indent' => $indent,
+                'code'   => $code,
+                'indent' => $indent,
             ]
         );
     }
@@ -35,8 +35,8 @@ class Beautifier
         return $this->post(
             '/css',
             [
-            'code'   => $code,
-            'indent' => $indent,
+                'code'   => $code,
+                'indent' => $indent,
             ]
         );
     }
@@ -51,8 +51,8 @@ class Beautifier
         return $this->post(
             '/js',
             [
-            'code'   => $code,
-            'indent' => $indent,
+                'code'   => $code,
+                'indent' => $indent,
             ]
         );
     }
