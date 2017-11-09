@@ -11,45 +11,54 @@ class Beautifier
 
     /**
      * @param     $code
-     * @param int $indent
+     * @param int  $indent
      * @return bool|mixed
      */
     public function html($code, $indent = 4)
     {
-        return $this->post('/html', [
+        return $this->post(
+            '/html',
+            [
             'code'   => $code,
             'indent' => $indent,
-        ]);
+            ]
+        );
     }
 
     /**
      * @param     $code
-     * @param int $indent
+     * @param int  $indent
      * @return bool|mixed
      */
     public function css($code, $indent = 4)
     {
-        return $this->post('/css', [
+        return $this->post(
+            '/css',
+            [
             'code'   => $code,
             'indent' => $indent,
-        ]);
+            ]
+        );
     }
 
     /**
      * @param     $code
-     * @param int $indent
+     * @param int  $indent
      * @return bool|mixed
      */
     public function js($code, $indent = 2)
     {
-        return $this->post('/js', [
+        return $this->post(
+            '/js',
+            [
             'code'   => $code,
             'indent' => $indent,
-        ]);
+            ]
+        );
     }
 
     /**
-     * @param string $mode
+     * @param string  $mode
      * @param        $content
      * @return bool|mixed
      */
