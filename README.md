@@ -28,8 +28,8 @@ $ composer require pxgamer/dirtyapi
 ## Usage
 
 ```php
-use \pxgamer\DirtyApi\Beautifier();
-$beautifier = new Beautifier;
+use \pxgamer\DirtyApi\Beautifier;
+$beautifier = new Beautifier();
 ```
 
 #### Methods
